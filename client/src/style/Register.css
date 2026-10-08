@@ -1,0 +1,190 @@
+.register-page {
+  min-height: calc(100vh - 75px);
+
+  padding: 60px 5%;
+
+  background: #fff7f8;
+}
+
+.register-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.register-card {
+  background: white;
+
+  padding: 45px;
+
+  border-radius: 14px;
+  border: 1px solid #eee;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
+}
+
+.register-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.register-heading p {
+  color: #8b1e3f;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.register-heading h1 {
+  color: #2d1a20;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.register-heading span {
+  color: #777;
+  font-size: 15px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #333;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="password"] {
+  width: 100%;
+  height: 48px;
+
+  padding: 0 14px;
+
+  border: 1px solid #ddd;
+  border-radius: 7px;
+
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #8b1e3f;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+/* Role */
+
+.role-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.role-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 16px;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.role-option:has(input:checked) {
+  border-color: #8b1e3f;
+  background: #fff7f8;
+}
+
+.role-option input {
+  accent-color: #8b1e3f;
+}
+
+.role-option strong {
+  display: block;
+  color: #2d1a20;
+}
+
+.role-option small {
+  display: block;
+  margin-top: 4px;
+  color: #777;
+}
+
+/* Button */
+
+.register-btn {
+  width: 100%;
+  height: 50px;
+
+  margin-top: 10px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #8b1e3f;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background: #6f1632;
+}
+
+.login-link {
+  text-align: center;
+
+  margin-top: 25px;
+
+  color: #777;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #8b1e3f;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .register-page {
+    padding: 30px 5%;
+  }
+
+  .register-card {
+    padding: 25px;
+  }
+
+  .register-heading h1 {
+    font-size: 28px;
+  }
+
+  .form-row,
+  .role-options {
+    grid-template-columns: 1fr;
+  }
+}
